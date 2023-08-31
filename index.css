@@ -752,24 +752,10 @@ input:focus {
 }
 
 
-@media  (max-width: 600px) {
-    .main {
-        margin: 0%;
-        width: 100%;
-        background-size: 110%;
-        box-sizing: border-box;
-    }
-    .navbar-sec{
-        width: 100%;
-    }
-    .sec4-r{
-        width: 10em;
-        height: auto;
-        margin-top: 3em;  
-      }
-  }
+
   @media  (max-width: 1024px) {
     .navbar{
+        
         display: flex;
         position: relative;
         top: -15em;
@@ -817,6 +803,7 @@ input:focus {
     }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
+  
   @media  (max-width: 600px) {
     
     .main{
@@ -882,15 +869,32 @@ input:focus {
     
   }
   
+  @media  (min-width: 600px) {
+    .navbar-sec {
+        width: 700px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .section-2,.section3,.section5,.section7{
+        display: flex;
+        width: 700px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section6,.foo-flbox,.copyright{
+        display: flex;
+        width: 700px;
+        justify-content:center;
+    }
+  }
   /* Medium devices (landscape tablets, 768px and up) */
    
   
   /* Large devices (laptops/desktops, 992px and up) */
-  /* @media only screen and (min-width: 992px) {
-    div {background: orange;}
-  }  */
+  /*  */
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media only screen and (min-width: 1200px) {
-    div {background: pink;}
-  } */
+  /*  */
