@@ -944,13 +944,13 @@ input:focus {
     }
     .section-2,.section3,.section5,.section7{
         display: flex;
-        width: 800px;
+        width: 900px;
         flex-direction: column;
         justify-content: center;
     }
     .section6,.foo-flbox,.copyright{
         display: flex;
-        width: 800px;
+        width: 900px;
         justify-content:center;
     }
     .sec4-con-r {
