@@ -731,3 +731,33 @@ input:focus {
     font-weight: 400;
     color: #5E6282;
 }
+
+
+@media  (max-width: 600px) {
+    .main {
+        margin: 0%;
+        width: 100vw;
+        box-sizing: border-box;
+
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    div {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    div {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    div {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    div {background: pink;}
+  }
