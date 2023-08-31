@@ -939,7 +939,7 @@ input:focus {
         left: -1em;
     }
     .box{
-        height: 50vh;
+        height:auto;
     }
     .box-set-sec2{
         position: relative;
