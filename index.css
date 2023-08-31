@@ -793,6 +793,9 @@ input:focus {
         width: 1024px;
 
     }
+    .box{
+        height: 50vh;
+    }
     .navbar{
         
         display: flex;
