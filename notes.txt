@@ -1,2 +1,5 @@
 =>using mediaQuery to mention gap for each box 
 =>mention width for each resolution
+
+=>CATEGORY card 
+=>brand alling

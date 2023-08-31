@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box;
     margin: 0%;
+
 }
 
 :root {
@@ -26,13 +27,13 @@ a {
 
 
 
-.main {
+.main{
     display: flex;
     flex-direction: column;
     font-family: var(--poppins-font);
     font-weight: 700;
     color: var(--black-color);
-    gap: 2em;
+    gap: 3em;
     width: 100%;
     height: auto;
 
@@ -45,43 +46,59 @@ a {
 }
 
 .navbar-sec {
+    width: 100%;
     height: 800px;
-    background-image: url(./Images/header/beachimg.png);
-    opacity: 90%;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: 16em;
+    background-image: url(./Images/header/beachimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    box-sizing: border-box;
+    
+   
+    
 }
 
 .navbar {
+    width: 100%;
+    margin: 0%;
     display: flex;
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
     margin-top: 3em;
-    z-index: 100;
+    z-index: 100; 
 }
-
 .brand {
+
+    width: 8em;
+    height: auto;
+    display: flex;
+    justify-content: center;
     font-family: var(--Peralta-font);
     font-size: 40px;
     color: var(--black-color);
 }
-
+.navbar-collapse{
+    width: 35em;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+.navbar-btn {
+    width: 20em;
+    height: auto;
+    display: flex;
+justify-content: center;
+    gap: 2em;
+}
 .nav-List {
     display: flex;
-    gap: 90px;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    top: 1.5em;
-}
-
-.navbar-btn {
-    display: flex;
-    gap: 30px;
-    position: relative;
-    top: 1em;
+    gap: 2em;
 }
 
 .btn {
@@ -122,6 +139,8 @@ a {
 /* section-2-styling*/
 
 .section-2 {
+    width: 100%;
+    margin: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -202,6 +221,7 @@ p {
 /*section3*/
 .section3 {
     width: 100%;
+    margin: 0%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -293,15 +313,11 @@ p {
 
 
 .section4 {
-
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3em;
-    margin-top: 3em;
-    width: 100%;
+    margin: 0%;
     height: auto;
-    margin-top: 7em;
 }
 
 .sec4-l {
@@ -310,14 +326,17 @@ p {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    margin-top: 3em;
 }
 
 .sec4-r {
-    width: 33em;
+    width: 18em;
     height: auto;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
 }
 
-/*  */
 
 .sec4-con2 {
     width: 100%;
@@ -376,7 +395,7 @@ p {
 
 .sec4-card {
 
-    width: 26em;
+    width: 20em;
     height: 28em;
     display: flex;
     flex-direction: column;
@@ -443,7 +462,7 @@ p {
     justify-content: center;
     background-color: #ffff;
     position: absolute;
-    left: 16em;
+    left: 14em;
     bottom: 4em;
 }
 
@@ -471,7 +490,7 @@ p {
 .card-footer-heart-img {
     position: absolute;
     bottom: -2em;
-    left: 6em;
+    left: 3em;
 }
 
 
@@ -736,28 +755,126 @@ input:focus {
 @media  (max-width: 600px) {
     .main {
         margin: 0%;
-        width: 100vw;
+        width: 100%;
+        background-size: 110%;
         box-sizing: border-box;
-
+    }
+    .navbar-sec{
+        width: 100%;
+    }
+    .sec4-r{
+        width: 10em;
+        height: auto;
+        margin-top: 3em;  
+      }
+  }
+  @media  (max-width: 1024px) {
+    .navbar{
+        display: flex;
+        position: relative;
+        top: -15em;
+    }
+    .brand {
+        width: 1024px;
+        height: auto;
+        display: flex;
+    }
+    
+    .navbar-sec {
+        width: 1024px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+    .navbar-section1{
+        position: relative;
+        top: -3.5em;
+    }
+    .sec4-card2{
+        position: relative;
+        left: 1em;
+    }
+    .sec4-con-r {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: relative;
+        left: -6em;
+    }
+    .sec4-card2{
+        position: relative;
+        left: 11em;
+        bottom: 6em;
+    }
+    .card-footer-heart-img{
+        position: absolute;
+        bottom: -3em;
     }
   }
-  
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    div {background: green;}
+  @media  (max-width: 600px) {
+    
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .brand {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-family: var(--Peralta-font);
+        font-size: 40px;
+        color: var(--black-color);
+    }
+    .navbar{
+        display: flex;
+        position: relative;
+        top: -8em;
+    }
+    .navbar-sec {
+        width: 600px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+       
+    }
+    .section-2,.section3,.section5,.section7{
+        display: flex;
+        width: 600px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section6,.foo-flbox,.copyright{
+        display: flex;
+        width: 600px;
+        justify-content:center;
+    }
+    .sec4-con-r {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: relative;
+        left: 6em;
+    }
+    
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    div {background: blue;}
-  } 
+   
   
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+  /* @media only screen and (min-width: 992px) {
     div {background: orange;}
-  } 
+  }  */
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  /* @media only screen and (min-width: 1200px) {
     div {background: pink;}
-  }
+  } */
