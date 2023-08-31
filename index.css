@@ -791,6 +791,10 @@ input:focus {
         position: relative;
         top: -3.5em;
     }
+    .border-bx-mk{
+        position: relative;
+        top: -20em;
+    }
     .sec4-card2{
         position: relative;
         left: 1em;
@@ -844,6 +848,18 @@ input:focus {
         justify-content: center;
         gap: 1em;
        
+    }
+    .navbar-btn{
+        position: relative;
+        top: -10em;
+        left: -1em;
+    }
+    .box{
+        height: 35vh;
+    }
+    .border-bx-mk{
+        position: relative;
+        top: -20em;
     }
     .section-2,.section3,.section5,.section7{
         display: flex;
