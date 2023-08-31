@@ -32,6 +32,7 @@ a {
     font-family: var(--poppins-font);
     font-weight: 700;
     color: var(--black-color);
+    gap: 2em;
     width: 100%;
     height: auto;
 
@@ -295,31 +296,50 @@ p {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3em;
     margin-top: 3em;
     width: 100%;
     height: auto;
     margin-top: 7em;
 }
 
-.sec4-con-l {
-    width: 50%;
+.sec4-l {
+    width: 42em;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 2em;
-
 }
 
+.sec4-r {
+    width: 33em;
+    height: auto;
+}
+
+/*  */
+
 .sec4-con2 {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 2em;
     position: relative;
     left: 6em;
 }
 
+.sec4-con2-fbox {
+    width: 70%;
+    height: auto;
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .sec4-head {
     font-size: 3em;
-    word-wrap: wrap;
     position: relative;
     left: .8em;
 
@@ -423,8 +443,8 @@ p {
     justify-content: center;
     background-color: #ffff;
     position: absolute;
-    right: 8em;
-    bottom: 7em;
+    left: 16em;
+    bottom: 4em;
 }
 
 .sec4-card2-l {
@@ -453,6 +473,7 @@ p {
     bottom: -2em;
     left: 6em;
 }
+
 
 /* section-5 */
 
@@ -614,72 +635,66 @@ input:focus {
     outline: none;
 }
 
+
+
 /* footer */
 .footer {
     margin-top: 3em;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 4em;
+    justify-content: space-around;
+    gap: 2em;
 }
 
-.about {
-    width: 97%;
+.foo-flbox {
+    width: 100%;
+    height: auto;
     display: flex;
-    gap: 1em;
-    margin: 0%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
 }
 
 .msg {
-    width: 30%;
+    width: 20em;
+    height: auto;
     font-weight: 400;
     display: flex;
     align-items: center;
     color: #5E6282;
 }
 
-.cmpy-about {
-    width: 50%;
+.carrer {
+
+    width: 35em;
+    height: auto;
     display: flex;
-    gap: 3em;
+    align-items: center;
+    gap: 1em;
     justify-content: space-around;
 }
 
-.company {
+.social-media-icon {
+
+    width: 15em;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    justify-content: center;
+    align-items: center;
 }
 
-.cmpy-con {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-    font-weight: 400;
-    color: #5E6282;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.con-info {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-    font-weight: 400;
-    color: #5E6282;
-}
-
+.company,
+.contact,
 .more {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
+.cmpy-con,
+.con-info,
 .more-info {
     display: flex;
     flex-direction: column;
@@ -688,18 +703,8 @@ input:focus {
     color: #5E6282;
 }
 
-.social-media {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -1em;
-}
-
-.icons {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+.icons-ft-w {
+    width: 4em;
 }
 
 .discovre {
@@ -712,13 +717,12 @@ input:focus {
 .discovre>div>p {
     color: #5E6282;
     font-weight: 400;
-    position: relative;
-    left: 1em;
 }
 
 .discovre-img {
-    position: relative;
-    left: 1em;
+    display: flex;
+    gap: 1em;
+
 }
 
 .copyright {
